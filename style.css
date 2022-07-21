@@ -1,0 +1,188 @@
+body {
+    width: 95%;
+    margin: auto;
+}
+* {
+    font-family: sans-serif;
+    margin : 0;
+    padding : 0 ; 
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div.left {
+    display: flexbox;
+    
+    font-size: 30px;
+}
+nav div.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav div.right a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+#intro-lines span {
+    margin-bottom: 5%;
+}
+:where(#intro-lines.left span,#intro-lines.left p ){
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.links a {
+    margin-right: 10px;
+    padding:10px 20px;
+    background-color: #00ABAE;
+    color: white;
+    text-decoration: none;
+    border-radius: 7%;
+}
+.intro div.left{
+    width : 50%;
+}
+.intro div.right {
+
+    width : 50%;
+}
+.intro div.right img{
+    width: 100%;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.section-name {
+    margin-bottom: 4%;
+}
+
+.skills div {
+    width: 31%;
+    text-align: justify;
+}
+
+.Tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+
+}
+.Tools img {
+    height: 37%;
+}
+div.links {
+display:flex;
+}
+
+
+.project-section {
+    display: flex;
+    margin-bottom: 4%;
+
+}
+.project-section div.left {
+    width: 50%;
+}
+.project-section div.left * {
+    margin-bottom: 2%;
+}
+.project-section div.right {
+    width: 50%;
+}
+
+.project-section div.right img {
+    width: 100%;
+}
+
+div.Contact {
+text-align: center;
+margin-bottom: 3%;
+}
+
+footer {
+text-align: center;
+margin-bottom: 3%;
+
+}
+div.Contact *,footer * {
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-section, .skills {
+        flex-direction: column;
+        
+    }
+    nav div.left {
+      font-size: 15px;
+      padding: 1rem 1rem;
+    }
+    .intro {
+        flex-direction: column-reverse;
+
+    }
+    .Tools {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 0px;
+            margin: 0px;
+            align-self: center;
+
+    }
+    .intro div.left,.intro div.right, .skills div,
+    .project-section div.left , .project-section div.right {
+        width: 95%;
+        justify-content: center;
+}
+
+    body * {
+        margin-bottom: 8%;
+    }
+}
+
+
+/*nav * {
+    background-color: wheat;
+    text-decoration: none;
+    box-sizing: border-box;
+    font : sans-serif;
+    list-style: none;
+}
+
+label.logo {
+    font-weight: bold;
+    font-size : 42px;
+    
+}
+label.logo span {
+    color: #00ABAE;
+}
+nav ul {
+    float: right;
+    margin : 20px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    
+}*/
